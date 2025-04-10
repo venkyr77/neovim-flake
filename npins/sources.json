@@ -26,6 +26,19 @@
       "url": "https://github.com/akinsho/bufferline.nvim/archive/655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3.tar.gz",
       "hash": "0m5363rpbjgvsnbhp9yrivbqj17lmrb5m57lpnq7dgxsmw3hrvk9"
     },
+    "guess-indent.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "NMAC427",
+        "repo": "guess-indent.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "84a4987ff36798c2fc1169cbaff67960aed9776f",
+      "url": "https://github.com/NMAC427/guess-indent.nvim/archive/84a4987ff36798c2fc1169cbaff67960aed9776f.tar.gz",
+      "hash": "0fq6f4k0j10m3ic5a6px4l4q4jqs7xxbh0j72kaqi1np4p069w9k"
+    },
     "lualine.nvim": {
       "type": "Git",
       "repository": {
@@ -103,6 +116,19 @@
       "revision": "de39919a57e1a40a4c7dc5bae0de276f9c616ef3",
       "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/de39919a57e1a40a4c7dc5bae0de276f9c616ef3.tar.gz",
       "hash": "04a3y7kyszgjgi1nmjb41vwwpz4svkxh61zkbxrn4ajvxz1ia05i"
+    },
+    "smartyank.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "ibhagwan",
+        "repo": "smartyank.nvim"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "0a4554a4ea4cad73dab0a15e559f2128ca03c7b2",
+      "url": "https://github.com/ibhagwan/smartyank.nvim/archive/0a4554a4ea4cad73dab0a15e559f2128ca03c7b2.tar.gz",
+      "hash": "15513r85kh0fy6y5lrqvrrafjadfhfh6hrcs4x2pjvh65zsja3y5"
     },
     "snacks.nvim": {
       "type": "Git",

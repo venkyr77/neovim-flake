@@ -11,6 +11,8 @@ require("auto-save").setup({
 
 require("bufferline").setup()
 
+require("guess-indent").setup()
+
 require("lualine").setup()
 
 require("noice").setup()
@@ -28,6 +30,12 @@ require("nvim-treesitter.configs").setup({
   ignore_install = {},
   modules = {},
   sync_install = false,
+})
+
+require("smartyank").setup({
+  osc52 = {
+    ssh_only = false,
+  };
 })
 
 require("snacks").setup({
