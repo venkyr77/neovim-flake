@@ -44,11 +44,30 @@
         "aarch64-darwin"
       ];
 
-      perSystem = {system, ...}: {
-        packages.default = mnw.lib.wrap nixpkgs.legacyPackages.${system} {
+      perSystem = {system, ...}: let
+        inherit (nixpkgs) lib;
+        pkgs = nixpkgs.legacyPackages.${system};
+      in {
+        packages.default = mnw.lib.wrap pkgs {
           inherit (neovim-nightly.packages.${system}) neovim;
-          initLua = "require('config')";
-          plugins = [./nvim];
+          initLua =
+            # lua
+            ''
+              require('config')
+            '';
+          plugins =
+            lib.mapAttrsToList (
+              pname: pin: (
+                pin
+                // {
+                  inherit pname;
+                  version = pin.revision;
+                }
+              )
+            ) (import ./npins/default.nix)
+            ++ [
+              ./nvim
+            ];
         };
       };
     };

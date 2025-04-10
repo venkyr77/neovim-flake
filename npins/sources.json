@@ -1,0 +1,18 @@
+{
+  "pins": {
+    "auto-save.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "pocco81",
+        "repo": "auto-save.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "979b6c82f60cfa80f4cf437d77446d0ded0addf0",
+      "url": "https://github.com/pocco81/auto-save.nvim/archive/979b6c82f60cfa80f4cf437d77446d0ded0addf0.tar.gz",
+      "hash": "13kv2p0gj20fg79ch27a9vp10ki11vjj4fx626cj526qpnbs4qbd"
+    }
+  },
+  "version": 5
+}

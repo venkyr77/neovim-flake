@@ -1,2 +1,2 @@
-vim.opt.number = true
-vim.opt.relativenumber = true
+require("config.options")
+require("config.editor")
