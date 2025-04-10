@@ -11,6 +11,8 @@ require("auto-save").setup({
 
 require("lualine").setup()
 
+require("noice").setup()
+
 require("nvim-treesitter.configs").setup({
   auto_install = false,
   ensure_installed = {},
