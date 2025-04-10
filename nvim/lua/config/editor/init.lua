@@ -293,6 +293,9 @@ require("snacks").setup({
     },
     ui_select = true,
   },
+  scroll = {
+    enabled = true,
+  },
   words = {
     enabled = true,
   },
