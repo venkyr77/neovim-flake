@@ -39,6 +39,19 @@
       "url": "https://github.com/catppuccin/nvim/archive/5b5e3aef9ad7af84f463d17b5479f06b87d5c429.tar.gz",
       "hash": "0jmrwag2dx4b1g9x32xwxcr8y0l159hqks09z5miy99wav6dy7z2"
     },
+    "nvim-web-devicons": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvim-tree",
+        "repo": "nvim-web-devicons"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "57dfa947cc88cdf1baa2c7e13ed31edddd8fb1d1",
+      "url": "https://github.com/nvim-tree/nvim-web-devicons/archive/57dfa947cc88cdf1baa2c7e13ed31edddd8fb1d1.tar.gz",
+      "hash": "06w17s2ak5b8qiyzvi4yzrzfg3g14dl4l5wp0y3jm1bgpc93cyqi"
+    },
     "snacks.nvim": {
       "type": "Git",
       "repository": {
