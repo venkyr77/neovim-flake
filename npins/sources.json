@@ -26,6 +26,32 @@
       "url": "https://github.com/akinsho/bufferline.nvim/archive/655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3.tar.gz",
       "hash": "0m5363rpbjgvsnbhp9yrivbqj17lmrb5m57lpnq7dgxsmw3hrvk9"
     },
+    "cmp-buffer": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "hrsh7th",
+        "repo": "cmp-buffer"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "b74fab3656eea9de20a9b8116afa3cfc4ec09657",
+      "url": "https://github.com/hrsh7th/cmp-buffer/archive/b74fab3656eea9de20a9b8116afa3cfc4ec09657.tar.gz",
+      "hash": "1cwx8ky74633y0bmqmvq1lqzmphadnhzmhzkddl3hpb7rgn18vkl"
+    },
+    "cmp-path": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "hrsh7th",
+        "repo": "cmp-path"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "c6635aae33a50d6010bf1aa756ac2398a2d54c32",
+      "url": "https://github.com/hrsh7th/cmp-path/archive/c6635aae33a50d6010bf1aa756ac2398a2d54c32.tar.gz",
+      "hash": "18ixx14ibc7qrv32nj0ylxrx8w4ggg49l5vhcqd35hkp4n56j6mn"
+    },
     "guess-indent.nvim": {
       "type": "Git",
       "repository": {
@@ -103,6 +129,19 @@
       "revision": "2a406cdd8c373ae7fe378a9e062a5424472bd8d8",
       "url": "https://github.com/windwp/nvim-autopairs/archive/2a406cdd8c373ae7fe378a9e062a5424472bd8d8.tar.gz",
       "hash": "06i7bdq4msy2gia6mczxaj2y7chhrmw9xwjj8q4dix0pk58hjfp1"
+    },
+    "nvim-cmp": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "hrsh7th",
+        "repo": "nvim-cmp"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "059e89495b3ec09395262f16b1ad441a38081d04",
+      "url": "https://github.com/hrsh7th/nvim-cmp/archive/059e89495b3ec09395262f16b1ad441a38081d04.tar.gz",
+      "hash": "0yfxjkascn45svvzx727kz20bm6lkflkx4jc8nrx3rxv0j39wbb0"
     },
     "nvim-web-devicons": {
       "type": "Git",
