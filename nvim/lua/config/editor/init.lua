@@ -20,6 +20,8 @@ require("bufferline").setup({
   },
 })
 
+require("gitsigns").setup()
+
 require("guess-indent").setup()
 
 require("lualine").setup({
