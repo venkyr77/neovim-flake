@@ -13,6 +13,19 @@
       "url": "https://github.com/pocco81/auto-save.nvim/archive/979b6c82f60cfa80f4cf437d77446d0ded0addf0.tar.gz",
       "hash": "13kv2p0gj20fg79ch27a9vp10ki11vjj4fx626cj526qpnbs4qbd"
     },
+    "nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "catppuccin",
+        "repo": "nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "5b5e3aef9ad7af84f463d17b5479f06b87d5c429",
+      "url": "https://github.com/catppuccin/nvim/archive/5b5e3aef9ad7af84f463d17b5479f06b87d5c429.tar.gz",
+      "hash": "0jmrwag2dx4b1g9x32xwxcr8y0l159hqks09z5miy99wav6dy7z2"
+    },
     "snacks.nvim": {
       "type": "Git",
       "repository": {

@@ -1,3 +1,10 @@
+require("catppuccin").setup({
+  flavor = "mocha",
+  term_colors = true,
+})
+
+vim.cmd.colorscheme("catppuccin")
+
 require("auto-save").setup({
   debounce_delay = 100,
 })
