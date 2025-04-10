@@ -5,9 +5,7 @@ require("catppuccin").setup({
 
 vim.cmd.colorscheme("catppuccin")
 
-require("auto-save").setup({
-  debounce_delay = 100,
-})
+require("auto-save").setup({ debounce_delay = 100 })
 
 require("bufferline").setup({
   options = {
@@ -27,10 +25,7 @@ require("guess-indent").setup()
 require("lualine").setup({
   extensions = {
     {
-      filetypes = {
-        "snacks_picker_input",
-        "snacks_picker_list",
-      },
+      filetypes = { "snacks_picker_input", "snacks_picker_list" },
       sections = {
         lualine_a = {
           function()
@@ -41,79 +36,47 @@ require("lualine").setup({
     },
   },
   options = {
-    component_separators = {
-      "",
-      "",
-    },
-    section_separators = {
-      "",
-      "",
-    },
+    component_separators = { "", "" },
+    section_separators = { "", "" },
   },
   sections = {
     lualine_a = {
       {
         "mode",
         icons_enabled = true,
-        separator = {
-          left = "▎",
-          right = "",
-        },
+        separator = { left = "▎", right = "" },
       },
       {
         "",
         draw_empty = true,
-        separator = {
-          left = "",
-          right = "",
-        },
+        separator = { left = "", right = "" },
       },
     },
     lualine_b = {
       {
         "filetype",
         colored = true,
-        icon = {
-          align = "left",
-        },
+        icon = { align = "left" },
         icon_only = true,
       },
       {
         "filename",
-        separator = {
-          right = "",
-        },
-        symbols = {
-          modified = " ",
-          readonly = " ",
-        },
+        separator = { right = "" },
+        symbols = { modified = " ", readonly = " " },
       },
       {
         "",
         draw_empty = true,
-        separator = {
-          left = "",
-          right = "",
-        },
+        separator = { left = "", right = "" },
       },
     },
     lualine_c = {
       {
         "diff",
         colored = false,
-        diff_color = {
-          added = "DiffAdd",
-          modified = "DiffChange",
-          removed = "DiffDelete",
-        },
-        separator = {
-          right = "",
-        },
-        symbols = {
-          added = "+",
-          modified = "~",
-          removed = "-",
-        },
+        diff_color = { added = "DiffAdd", modified = "DiffChange", removed = "DiffDelete" },
+        separator = { right = "" },
+        symbols = { added = "+", modified = "~", removed = "-" },
       },
     },
     lualine_x = {
@@ -134,35 +97,19 @@ require("lualine").setup({
           return table.concat(active_clients, ", ")
         end,
         icon = " ",
-        separator = {
-          left = "",
-        },
+        separator = { left = "" },
       },
       {
         "diagnostics",
         always_visible = false,
         colored = true,
         diagnostics_color = {
-          color_error = {
-            fg = "red",
-          },
-          color_warn = {
-            fg = "yellow",
-          },
-          color_info = {
-            fg = "cyan",
-          },
+          color_error = { fg = "red" },
+          color_warn = { fg = "yellow" },
+          color_info = { fg = "cyan" },
         },
-        sources = {
-          "nvim_lsp",
-          "nvim_diagnostic",
-        },
-        symbols = {
-          error = "󰅙  ",
-          warn = "  ",
-          info = "  ",
-          hint = "󰌵 ",
-        },
+        sources = { "nvim_lsp", "nvim_diagnostic" },
+        symbols = { error = "󰅙  ", warn = "  ", info = "  ", hint = "󰌵 " },
         update_in_insert = false,
       },
     },
@@ -170,55 +117,37 @@ require("lualine").setup({
       {
         "",
         draw_empty = true,
-        separator = {
-          left = "",
-          right = "",
-        },
+        separator = { left = "", right = "" },
       },
       {
         "searchcount",
         maxcount = 999,
-        separator = {
-          left = "",
-        },
+        separator = { left = "" },
         timeout = 120,
       },
       {
         "branch",
         icon = " •",
-        separator = {
-          left = "",
-        },
+        separator = { left = "" },
       },
     },
     lualine_z = {
       {
         "",
         draw_empty = true,
-        separator = {
-          left = "",
-          right = "",
-        },
+        separator = { left = "", right = "" },
       },
       {
         "progress",
-        separator = {
-          left = "",
-        },
+        separator = { left = "" },
       },
       {
         "location",
       },
       {
         "fileformat",
-        color = {
-          fg = "black",
-        },
-        symbols = {
-          dos = "",
-          mac = "",
-          unix = "",
-        },
+        color = { fg = "black" },
+        symbols = { dos = "", mac = "", unix = "" },
       },
     },
   },
@@ -235,33 +164,21 @@ require("nvim-treesitter.configs").setup({
     enable = true,
     additional_vim_regex_highlighting = false,
   },
-  indent = {
-    enable = true,
-  },
+  indent = { enable = true },
   ignore_install = {},
   modules = {},
   sync_install = false,
 })
 
-require("smartyank").setup({
-  osc52 = {
-    ssh_only = false,
-  },
-})
+require("smartyank").setup({ osc52 = { ssh_only = false } })
 
 require("snacks").setup({
-  explorer = {
-    enabled = true,
-  },
+  explorer = { enabled = true },
   indent = {
     enabled = true,
-    scope = {
-      enabled = false,
-    },
+    scope = { enabled = false },
   },
-  notifier = {
-    enabled = true,
-  },
+  notifier = { enabled = true },
   picker = {
     enabled = true,
     sources = {
@@ -281,22 +198,14 @@ require("snacks").setup({
         },
       },
       files = {
-        layout = {
-          fullscreen = true,
-        },
+        layout = { fullscreen = true },
       },
       grep = {
-        layout = {
-          fullscreen = true,
-        },
+        layout = { fullscreen = true },
       },
     },
     ui_select = true,
   },
-  scroll = {
-    enabled = true,
-  },
-  words = {
-    enabled = true,
-  },
+  scroll = { enabled = true },
+  words = { enabled = true },
 })
