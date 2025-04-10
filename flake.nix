@@ -56,7 +56,10 @@
               require('config')
             '';
           plugins =
-            lib.mapAttrsToList (
+            [
+              pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+            ]
+            ++ lib.mapAttrsToList (
               pname: pin: (
                 pin
                 // {
