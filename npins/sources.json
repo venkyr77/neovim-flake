@@ -12,6 +12,19 @@
       "revision": "979b6c82f60cfa80f4cf437d77446d0ded0addf0",
       "url": "https://github.com/pocco81/auto-save.nvim/archive/979b6c82f60cfa80f4cf437d77446d0ded0addf0.tar.gz",
       "hash": "13kv2p0gj20fg79ch27a9vp10ki11vjj4fx626cj526qpnbs4qbd"
+    },
+    "snacks.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "folke",
+        "repo": "snacks.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "bc0630e43be5699bb94dadc302c0d21615421d93",
+      "url": "https://github.com/folke/snacks.nvim/archive/bc0630e43be5699bb94dadc302c0d21615421d93.tar.gz",
+      "hash": "0a5nw7xa33shag1h12gf930g3vcixbwk8dxv0ji4980ycskh238v"
     }
   },
   "version": 5
