@@ -91,6 +91,19 @@
       "url": "https://github.com/nvim-tree/nvim-web-devicons/archive/57dfa947cc88cdf1baa2c7e13ed31edddd8fb1d1.tar.gz",
       "hash": "06w17s2ak5b8qiyzvi4yzrzfg3g14dl4l5wp0y3jm1bgpc93cyqi"
     },
+    "rainbow-delimiters.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "HiPhish",
+        "repo": "rainbow-delimiters.nvim"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "de39919a57e1a40a4c7dc5bae0de276f9c616ef3",
+      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/de39919a57e1a40a4c7dc5bae0de276f9c616ef3.tar.gz",
+      "hash": "04a3y7kyszgjgi1nmjb41vwwpz4svkxh61zkbxrn4ajvxz1ia05i"
+    },
     "snacks.nvim": {
       "type": "Git",
       "repository": {
