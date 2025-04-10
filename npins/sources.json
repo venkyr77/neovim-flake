@@ -13,6 +13,19 @@
       "url": "https://github.com/pocco81/auto-save.nvim/archive/979b6c82f60cfa80f4cf437d77446d0ded0addf0.tar.gz",
       "hash": "13kv2p0gj20fg79ch27a9vp10ki11vjj4fx626cj526qpnbs4qbd"
     },
+    "lualine.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvim-lualine",
+        "repo": "lualine.nvim"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "0ea56f91b7f51a37b749c050a5e5dfdd56b302b3",
+      "url": "https://github.com/nvim-lualine/lualine.nvim/archive/0ea56f91b7f51a37b749c050a5e5dfdd56b302b3.tar.gz",
+      "hash": "0dmz4g8hvjdrnh4wd0syrnxymjrgmc3lnddm6cgdly6s36z9c9am"
+    },
     "nvim": {
       "type": "Git",
       "repository": {

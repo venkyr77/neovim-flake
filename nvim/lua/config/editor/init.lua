@@ -9,6 +9,8 @@ require("auto-save").setup({
   debounce_delay = 100,
 })
 
+require("lualine").setup()
+
 require("nvim-treesitter.configs").setup({
   auto_install = false,
   ensure_installed = {},
