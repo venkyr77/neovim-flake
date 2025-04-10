@@ -9,6 +9,8 @@ require("auto-save").setup({
   debounce_delay = 100,
 })
 
+require("bufferline").setup()
+
 require("lualine").setup()
 
 require("noice").setup()
