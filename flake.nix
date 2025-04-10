@@ -48,12 +48,25 @@
         inherit (nixpkgs) lib;
         pkgs = nixpkgs.legacyPackages.${system};
       in {
+        formatter = pkgs.writeShellApplication {
+          name = "format";
+          runtimeInputs = builtins.attrValues {
+            inherit (pkgs) alejandra deadnix fd statix stylua;
+          };
+          text = ''
+            fd "$@" -t f -e nix -x statix fix -- '{}'
+            fd "$@" -t f -e nix -X deadnix -e -- '{}'
+            fd "$@" -t f -e nix -X alejandra '{}'
+            fd "$@" -t f -e lua -X stylua --indent-type Spaces --indent-width 2 '{}'
+          '';
+        };
+
         packages.default = mnw.lib.wrap pkgs {
           inherit (neovim-nightly.packages.${system}) neovim;
           initLua =
             # lua
             ''
-              require('config')
+              require("config")
             '';
           plugins =
             [
