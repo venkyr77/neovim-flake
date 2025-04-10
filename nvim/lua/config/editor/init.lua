@@ -9,11 +9,38 @@ require("auto-save").setup({
   debounce_delay = 100,
 })
 
-require("bufferline").setup()
+require("bufferline").setup({
+  options = {
+    offsets = {
+      {
+        filetype = "snacks_layout_box",
+        highlight = "Directory",
+        separator = true,
+        text = "󰙅  File Explorer",
+      },
+    },
+  },
+})
 
 require("guess-indent").setup()
 
-require("lualine").setup()
+require("lualine").setup({
+  extensions = {
+    {
+      filetypes = {
+        "snacks_picker_input",
+        "snacks_picker_list",
+      },
+      sections = {
+        lualine_a = {
+          function()
+            return vim.fn.fnamemodify(vim.fn.getcwd(), ":~")
+          end,
+        },
+      },
+    },
+  },
+})
 
 require("noice").setup()
 
