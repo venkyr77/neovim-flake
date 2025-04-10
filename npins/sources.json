@@ -91,6 +91,19 @@
       "url": "https://github.com/catppuccin/nvim/archive/5b5e3aef9ad7af84f463d17b5479f06b87d5c429.tar.gz",
       "hash": "0jmrwag2dx4b1g9x32xwxcr8y0l159hqks09z5miy99wav6dy7z2"
     },
+    "nvim-autopairs": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "windwp",
+        "repo": "nvim-autopairs"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "2a406cdd8c373ae7fe378a9e062a5424472bd8d8",
+      "url": "https://github.com/windwp/nvim-autopairs/archive/2a406cdd8c373ae7fe378a9e062a5424472bd8d8.tar.gz",
+      "hash": "06i7bdq4msy2gia6mczxaj2y7chhrmw9xwjj8q4dix0pk58hjfp1"
+    },
     "nvim-web-devicons": {
       "type": "Git",
       "repository": {

@@ -17,6 +17,8 @@ require("lualine").setup()
 
 require("noice").setup()
 
+require("nvim-autopairs").setup()
+
 require("nvim-treesitter.configs").setup({
   auto_install = false,
   ensure_installed = {},
@@ -35,7 +37,7 @@ require("nvim-treesitter.configs").setup({
 require("smartyank").setup({
   osc52 = {
     ssh_only = false,
-  };
+  },
 })
 
 require("snacks").setup({
