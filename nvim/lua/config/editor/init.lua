@@ -187,16 +187,8 @@ require("snacks").setup({
       explorer = {
         hidden = true,
         win = {
-          input = {
-            keys = {
-              ["<Esc>"] = "",
-            },
-          },
-          list = {
-            keys = {
-              ["<Esc>"] = "",
-            },
-          },
+          input = { keys = { ["<Esc>"] = "" } },
+          list = { keys = { ["<Esc>"] = "" } },
         },
       },
       files = {
