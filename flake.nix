@@ -63,6 +63,13 @@
 
         packages.default = mnw.lib.wrap pkgs {
           inherit (neovim-nightly.packages.${system}) neovim;
+          extraBinPath = builtins.attrValues {
+            inherit
+              (pkgs)
+              alejandra
+              stylua
+              ;
+          };
           initLua =
             # lua
             ''
