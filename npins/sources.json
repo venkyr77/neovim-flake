@@ -250,6 +250,19 @@
       "url": "https://github.com/hrsh7th/nvim-cmp/archive/059e89495b3ec09395262f16b1ad441a38081d04.tar.gz",
       "hash": "0yfxjkascn45svvzx727kz20bm6lkflkx4jc8nrx3rxv0j39wbb0"
     },
+    "nvim-lint": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "mfussenegger",
+        "repo": "nvim-lint"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "5b1bdf306bd3e565908145279e8bbfc594dac3b3",
+      "url": "https://github.com/mfussenegger/nvim-lint/archive/5b1bdf306bd3e565908145279e8bbfc594dac3b3.tar.gz",
+      "hash": "0kwdb9wggkgzg9msrvnf15njqm9a8acljdak9fxnfh9al1ks8cav"
+    },
     "nvim-lspconfig": {
       "type": "Git",
       "repository": {
