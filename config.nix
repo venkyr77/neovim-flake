@@ -3,17 +3,21 @@
   pkgs,
   ...
 }: {
-  extraBinPath = [
-    # formatters
-    pkgs.alejandra
-    pkgs.stylua
-    # language servers
-    pkgs.lua-language-server
-    pkgs.nixd
-    #linters
-    pkgs.luajitPackages.luacheck
-    pkgs.statix
-  ];
+  extraBinPath = let
+    formatters = [
+      pkgs.alejandra
+      pkgs.stylua
+    ];
+    language_servers = [
+      pkgs.lua-language-server
+      pkgs.nixd
+    ];
+    linters = [
+      pkgs.luajitPackages.luacheck
+      pkgs.statix
+    ];
+  in
+    formatters ++ language_servers ++ linters;
 
   initLua =
     # lua
