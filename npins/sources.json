@@ -198,6 +198,19 @@
       "url": "https://github.com/nvim-lualine/lualine.nvim/archive/0ea56f91b7f51a37b749c050a5e5dfdd56b302b3.tar.gz",
       "hash": "0dmz4g8hvjdrnh4wd0syrnxymjrgmc3lnddm6cgdly6s36z9c9am"
     },
+    "lz.n": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvim-neorocks",
+        "repo": "lz.n"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "2ef8dfbef6f8f97873da4c5820067343690d114c",
+      "url": "https://github.com/nvim-neorocks/lz.n/archive/2ef8dfbef6f8f97873da4c5820067343690d114c.tar.gz",
+      "hash": "11i6ayqvyamh8i2scq7qbf6rrxrq9v0hax9gxmdxhdxd18djyq8n"
+    },
     "noice.nvim": {
       "type": "Git",
       "repository": {

@@ -35,6 +35,7 @@
         // {
           inherit pname;
           version = pin.revision;
+          optional = pname == "catppuccin.nvim";
         }
       )
     ) (import ./npins/default.nix)
