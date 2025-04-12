@@ -39,6 +39,19 @@
       "url": "https://github.com/hrsh7th/cmp-buffer/archive/b74fab3656eea9de20a9b8116afa3cfc4ec09657.tar.gz",
       "hash": "1cwx8ky74633y0bmqmvq1lqzmphadnhzmhzkddl3hpb7rgn18vkl"
     },
+    "cmp-nvim-lsp": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "hrsh7th",
+        "repo": "cmp-nvim-lsp"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "a8912b88ce488f411177fc8aed358b04dc246d7b",
+      "url": "https://github.com/hrsh7th/cmp-nvim-lsp/archive/a8912b88ce488f411177fc8aed358b04dc246d7b.tar.gz",
+      "hash": "08q5mf5jrqjjcl1s4h9zj2vd1kcizz0a5a6p65wv1rc5s1fa3a49"
+    },
     "cmp-path": {
       "type": "Git",
       "repository": {
@@ -171,6 +184,19 @@
       "revision": "059e89495b3ec09395262f16b1ad441a38081d04",
       "url": "https://github.com/hrsh7th/nvim-cmp/archive/059e89495b3ec09395262f16b1ad441a38081d04.tar.gz",
       "hash": "0yfxjkascn45svvzx727kz20bm6lkflkx4jc8nrx3rxv0j39wbb0"
+    },
+    "nvim-lspconfig": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "neovim",
+        "repo": "nvim-lspconfig"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "4ea9083b6d3dff4ddc6da17c51334c3255b7eba5",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/4ea9083b6d3dff4ddc6da17c51334c3255b7eba5.tar.gz",
+      "hash": "1cg0sn25855mraf1j4l4cm1zg4fv1hnvm87x3qbifyigbcg9ib65"
     },
     "nvim-web-devicons": {
       "type": "Git",

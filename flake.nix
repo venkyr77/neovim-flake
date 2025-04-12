@@ -66,8 +66,12 @@
           extraBinPath = builtins.attrValues {
             inherit
               (pkgs)
+              # formatters
               alejandra
               stylua
+              # language servers
+              lua-language-server
+              nixd
               ;
           };
           initLua =
