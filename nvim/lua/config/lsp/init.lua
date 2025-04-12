@@ -19,6 +19,7 @@ local on_attach = function(client, buffer)
       "<leader>g",
       buffer = buffer,
       desc = "+[g]oto(lsp)",
+      icon = " ",
     },
     {
       "<leader>gd",

@@ -7,7 +7,13 @@ gitsigns.setup({
       {
         "<leader>h",
         buffer = buffer,
-        desc = "+[h]unk gitsigns",
+        desc = "+[h]unk(gitsigns)",
+      },
+      {
+        "<leader>ht",
+        buffer = buffer,
+        desc = "+[t]oggle",
+        icon = " ",
       },
       {
         "<leader>hb",
@@ -71,7 +77,7 @@ gitsigns.setup({
           gitsigns.toggle_current_line_blame()
         end,
         buffer = buffer,
-        desc = "[t]oggle blame",
+        desc = "[b]lame",
       },
       {
         "<leader>hu",

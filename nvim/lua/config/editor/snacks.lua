@@ -46,6 +46,7 @@ wk.add({
   {
     "<leader>f",
     desc = "+[f]ind(snacks)",
+    icon = " ",
   },
   {
     "<leader>ff",
