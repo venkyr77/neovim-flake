@@ -4,6 +4,13 @@ require("bufferline").setup({
     close_command = function(n)
       Snacks.bufdelete(n)
     end,
+    diagnostics = "nvim_lsp",
+    diagnostics_indicator = function(_, _, diag)
+      return vim.trim(
+        (diag.error and ("" .. " " .. diag.error .. " ") or "")
+          .. (diag.warning and ("" .. " " .. diag.warning) or "")
+      )
+    end,
     indicator = { style = "underline" },
     offsets = {
       {
