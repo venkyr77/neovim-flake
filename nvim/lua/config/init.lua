@@ -1,6 +1,7 @@
 -- The order is intentional
 require("config.options")
 require("config.editor.colorscheme")
+require("config.editor.which-key")
 require("config.editor.snacks")
 require("config.editor.auto-save")
 require("config.editor.bufferline")
