@@ -36,6 +36,7 @@
           inherit pname;
           version = pin.revision;
           optional = builtins.elem pname [
+            "auto-save.nvim"
             "catppuccin.nvim"
             "conform.nvim"
           ];
