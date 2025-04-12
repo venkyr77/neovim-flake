@@ -35,7 +35,10 @@
         // {
           inherit pname;
           version = pin.revision;
-          optional = pname == "catppuccin.nvim";
+          optional = builtins.elem pname [
+            "catppuccin.nvim"
+            "conform.nvim"
+          ];
         }
       )
     ) (import ./npins/default.nix)
