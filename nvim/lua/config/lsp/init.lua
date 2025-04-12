@@ -2,6 +2,8 @@ local lspconfig = require("lspconfig")
 local snacks = require("snacks")
 local wk = require("which-key")
 
+require("lazydev").setup()
+
 local client_capabilities = vim.tbl_deep_extend(
   "force",
   {},
