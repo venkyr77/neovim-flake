@@ -5,6 +5,17 @@ snacks.setup({
   explorer = { enabled = true },
   indent = {
     enabled = true,
+    indent = {
+      hl = {
+        "RainbowRed",
+        "RainbowYellow",
+        "RainbowBlue",
+        "RainbowOrange",
+        "RainbowGreen",
+        "RainbowViolet",
+        "RainbowCyan",
+      },
+    },
     scope = { enabled = false },
   },
   notifier = { enabled = true },
