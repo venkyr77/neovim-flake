@@ -5,6 +5,17 @@ luasnip.setup({})
 require("luasnip.loaders.from_vscode").lazy_load()
 
 cmp.setup({
+  formatting = {
+    format = require("lspkind").cmp_format({
+      menu = {
+        buffer = "[Buffer]",
+        luasnip = "[Luasnip]",
+        nvim_lsp = "[LSP]",
+        path = "[Path]",
+      },
+      mode = "symbol_text",
+    }),
+  },
   mapping = {
     ["<Down>"] = cmp.mapping.select_next_item({ behavior = "select" }),
     ["<Up>"] = cmp.mapping.select_prev_item({ behavior = "select" }),
