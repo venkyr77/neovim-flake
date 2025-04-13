@@ -37,8 +37,12 @@
           version = pin.revision;
           optional = builtins.elem pname [
             "auto-save.nvim"
+            "bufferline.nvim"
             "catppuccin.nvim"
             "conform.nvim"
+            "lualine.nvim"
+            "nvim-autopairs"
+            "noice.nvim"
           ];
         }
       )
