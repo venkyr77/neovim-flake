@@ -8,10 +8,12 @@
       pkgs.alejandra
       pkgs.stylua
     ];
+
     language_servers = [
       pkgs.lua-language-server
       pkgs.nixd
     ];
+
     linters = [
       pkgs.luajitPackages.luacheck
       pkgs.statix
