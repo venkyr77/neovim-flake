@@ -1,40 +1,53 @@
-local cmp = require("cmp")
-local luasnip = require("luasnip")
-
-luasnip.setup({})
+require("luasnip").setup({})
 require("luasnip.loaders.from_vscode").lazy_load()
 
-cmp.setup({
-  formatting = {
-    format = require("lspkind").cmp_format({
-      menu = {
-        buffer = "[Buffer]",
-        luasnip = "[Luasnip]",
-        nvim_lsp = "[LSP]",
-        path = "[Path]",
+require("blink.cmp").setup({
+  completion = {
+    list = {
+      selection = { auto_insert = false, preselect = false },
+    },
+    menu = {
+      draw = {
+        columns = {
+          { "label", "label_description", gap = 1 },
+          { "kind_icon", "kind", gap = 1 },
+          { "source_name" },
+        },
+        components = {
+          kind_icon = {
+            text = function(ctx)
+              local icon = ctx.kind_icon
+
+              if vim.tbl_contains({ "Path" }, ctx.source_name) then
+                local dev_icon, _ = require("nvim-web-devicons").get_icon(ctx.label)
+                if dev_icon then
+                  icon = dev_icon
+                end
+              else
+                icon = require("lspkind").symbolic(ctx.kind, { mode = "symbol" })
+              end
+
+              return icon .. ctx.icon_gap
+            end,
+          },
+          source_name = {
+            text = function(ctx)
+              local source_to_text = {
+                Buffer = "[Buffer]",
+                LSP = "[LSP]",
+                Path = "[Path]",
+                Snippets = "[LuaSnip]",
+              }
+
+              return source_to_text[ctx.source_name]
+            end,
+          },
+        },
       },
-      mode = "symbol_text",
-    }),
+    },
+    documentation = { auto_show = true, auto_show_delay_ms = 500 },
   },
-  mapping = {
-    ["<Down>"] = cmp.mapping.select_next_item({ behavior = "select" }),
-    ["<Up>"] = cmp.mapping.select_prev_item({ behavior = "select" }),
-    ["<Tab>"] = cmp.mapping.confirm({ select = true }),
-    ["<CR>"] = cmp.mapping.confirm({ select = false }),
-    ["<C-Space>"] = cmp.mapping.complete({}),
-    ["<C-b>"] = cmp.mapping.scroll_docs(-4),
-    ["<C-f>"] = cmp.mapping.scroll_docs(4),
-  },
-  snippet = {
-    expand = function(args)
-      luasnip.lsp_expand(args.body)
-    end,
-  },
-  sources = {
-    { name = "buffer" },
-    { name = "lazydev" },
-    { name = "luasnip" },
-    { name = "nvim_lsp" },
-    { name = "path" },
-  },
+  keymap = { preset = "enter" },
+  signature = { enabled = true },
+  snippets = { preset = "luasnip" },
 })

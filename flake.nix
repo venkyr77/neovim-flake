@@ -1,5 +1,12 @@
 {
   inputs = {
+    blink-cmp = {
+      url = "github:Saghen/blink.cmp";
+      inputs = {
+        flake-parts.follows = "flake-parts";
+        nixpkgs.follows = "nixpkgs";
+      };
+    };
     flake-compat.url = "github:edolstra/flake-compat";
     flake-parts.url = "github:hercules-ci/flake-parts";
     git-hooks = {
@@ -30,6 +37,7 @@
     nixpkgs.url = "github:/NixOS/nixpkgs/nixpkgs-unstable";
   };
   outputs = {
+    blink-cmp,
     flake-parts,
     mnw,
     neovim-nightly,
@@ -62,6 +70,7 @@
 
         packages.default = mnw.lib.wrap pkgs {
           inherit (neovim-nightly.packages.${system}) neovim;
+          plugins = [blink-cmp.packages.${system}.blink-cmp];
           imports = [./config.nix];
         };
       };

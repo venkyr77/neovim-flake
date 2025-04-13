@@ -52,58 +52,6 @@
       "url": "https://github.com/catppuccin/nvim/archive/5b5e3aef9ad7af84f463d17b5479f06b87d5c429.tar.gz",
       "hash": "0jmrwag2dx4b1g9x32xwxcr8y0l159hqks09z5miy99wav6dy7z2"
     },
-    "cmp-buffer": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "hrsh7th",
-        "repo": "cmp-buffer"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "b74fab3656eea9de20a9b8116afa3cfc4ec09657",
-      "url": "https://github.com/hrsh7th/cmp-buffer/archive/b74fab3656eea9de20a9b8116afa3cfc4ec09657.tar.gz",
-      "hash": "1cwx8ky74633y0bmqmvq1lqzmphadnhzmhzkddl3hpb7rgn18vkl"
-    },
-    "cmp-nvim-lsp": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "hrsh7th",
-        "repo": "cmp-nvim-lsp"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "a8912b88ce488f411177fc8aed358b04dc246d7b",
-      "url": "https://github.com/hrsh7th/cmp-nvim-lsp/archive/a8912b88ce488f411177fc8aed358b04dc246d7b.tar.gz",
-      "hash": "08q5mf5jrqjjcl1s4h9zj2vd1kcizz0a5a6p65wv1rc5s1fa3a49"
-    },
-    "cmp-path": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "hrsh7th",
-        "repo": "cmp-path"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "c6635aae33a50d6010bf1aa756ac2398a2d54c32",
-      "url": "https://github.com/hrsh7th/cmp-path/archive/c6635aae33a50d6010bf1aa756ac2398a2d54c32.tar.gz",
-      "hash": "18ixx14ibc7qrv32nj0ylxrx8w4ggg49l5vhcqd35hkp4n56j6mn"
-    },
-    "cmp_luasnip": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "saadparwaiz1",
-        "repo": "cmp_luasnip"
-      },
-      "branch": "master",
-      "submodules": false,
-      "revision": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90",
-      "url": "https://github.com/saadparwaiz1/cmp_luasnip/archive/98d9cb5c2c38532bd9bdb481067b20fea8f32e90.tar.gz",
-      "hash": "037sh4g1747wf07f9sqngiifp89hqww6m2rvizy5ra7jyd04magk"
-    },
     "conform.nvim": {
       "type": "GitRelease",
       "repository": {
@@ -249,19 +197,6 @@
       "revision": "2a406cdd8c373ae7fe378a9e062a5424472bd8d8",
       "url": "https://github.com/windwp/nvim-autopairs/archive/2a406cdd8c373ae7fe378a9e062a5424472bd8d8.tar.gz",
       "hash": "06i7bdq4msy2gia6mczxaj2y7chhrmw9xwjj8q4dix0pk58hjfp1"
-    },
-    "nvim-cmp": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "hrsh7th",
-        "repo": "nvim-cmp"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "059e89495b3ec09395262f16b1ad441a38081d04",
-      "url": "https://github.com/hrsh7th/nvim-cmp/archive/059e89495b3ec09395262f16b1ad441a38081d04.tar.gz",
-      "hash": "0yfxjkascn45svvzx727kz20bm6lkflkx4jc8nrx3rxv0j39wbb0"
     },
     "nvim-lint": {
       "type": "Git",

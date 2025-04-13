@@ -12,12 +12,7 @@ vim.diagnostic.config({
 
 require("lazydev").setup()
 
-local client_capabilities = vim.tbl_deep_extend(
-  "force",
-  {},
-  vim.lsp.protocol.make_client_capabilities(),
-  require("cmp_nvim_lsp").default_capabilities()
-)
+local client_capabilities = require("blink.cmp").get_lsp_capabilities()
 
 local goto_picker_opts = {
   layout = { fullscreen = true },
