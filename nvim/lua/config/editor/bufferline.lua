@@ -18,7 +18,7 @@ require("lz.n").load({
         indicator = { style = "underline" },
         offsets = {
           {
-            filetype = "snacks_layout_box",
+            filetype = "neo-tree",
             highlight = "Directory",
             separator = true,
             text = "󰙅  File Explorer",
