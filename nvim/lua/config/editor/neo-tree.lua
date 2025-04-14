@@ -20,3 +20,11 @@ require("neo-tree").setup({
     scan_mode = "deep",
   },
 })
+
+require("which-key").add({
+  {
+    "\\",
+    ":Neotree toggle<CR>",
+    desc = "[N]eotree [t]oggle",
+  },
+})
