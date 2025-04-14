@@ -44,6 +44,7 @@
             "conform.nvim"
             "friendly-snippets"
             "gitsigns.nvim"
+            "guess-indent.nvim"
             "lualine.nvim"
             "LuaSnip"
             "nvim-autopairs"
