@@ -44,6 +44,7 @@
             "catppuccin.nvim"
             "conform.nvim"
             "friendly-snippets"
+            "gitsigns.nvim"
             "lualine.nvim"
             "LuaSnip"
             "nvim-autopairs"
