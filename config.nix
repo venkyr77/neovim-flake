@@ -50,6 +50,7 @@
             "nvim-autopairs"
             "nvim-lspconfig"
             "noice.nvim"
+            "smartyank.nvim"
             "todo-comments.nvim"
           ];
         }
