@@ -159,6 +159,19 @@
       "url": "https://github.com/nvim-neorocks/lz.n/archive/6cbcc65c5b1301082706b24f30cb20d8c5e76709.tar.gz",
       "hash": "07gws01nakd19w4n3asks9ziv52db42k2h9d2mmqmaxh76k76gvw"
     },
+    "neo-tree.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvim-neo-tree",
+        "repo": "neo-tree.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "5224467c6a49a6c77b8a8333f4d9af0abc788e10",
+      "url": "https://github.com/nvim-neo-tree/neo-tree.nvim/archive/5224467c6a49a6c77b8a8333f4d9af0abc788e10.tar.gz",
+      "hash": "0dzppxi4w38s3pqsgwd3z0xr1r14bd0v4qpakxw3kjn9wr2d8y7n"
+    },
     "noice.nvim": {
       "type": "Git",
       "repository": {
@@ -236,6 +249,19 @@
       "revision": "c90dee4e930ab9f49fa6d77f289bff335b49e972",
       "url": "https://github.com/nvim-tree/nvim-web-devicons/archive/c90dee4e930ab9f49fa6d77f289bff335b49e972.tar.gz",
       "hash": "0i41df2cafrpc49cfbimajwbiyhd31q95d1s3rh40g6zgz0gm8sc"
+    },
+    "plenary.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvim-lua",
+        "repo": "plenary.nvim"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "857c5ac632080dba10aae49dba902ce3abf91b35",
+      "url": "https://github.com/nvim-lua/plenary.nvim/archive/857c5ac632080dba10aae49dba902ce3abf91b35.tar.gz",
+      "hash": "0jxx9nfga7z87v78cifglqs8w4mrpf99wcp483kb0hbv6537jmgh"
     },
     "rainbow-delimiters.nvim": {
       "type": "Git",

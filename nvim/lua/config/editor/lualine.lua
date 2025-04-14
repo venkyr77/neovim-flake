@@ -4,16 +4,7 @@ require("lz.n").load({
   after = function()
     require("lualine").setup({
       extensions = {
-        {
-          filetypes = { "snacks_picker_input", "snacks_picker_list" },
-          sections = {
-            lualine_a = {
-              function()
-                return vim.fn.fnamemodify(vim.fn.getcwd(), ":~")
-              end,
-            },
-          },
-        },
+        "neo-tree",
       },
       options = {
         component_separators = { "", "" },

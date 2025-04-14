@@ -2,7 +2,6 @@ local snacks = require("snacks")
 local wk = require("which-key")
 
 snacks.setup({
-  explorer = { enabled = true },
   indent = {
     enabled = true,
     indent = {
@@ -22,13 +21,6 @@ snacks.setup({
   picker = {
     enabled = true,
     sources = {
-      explorer = {
-        hidden = true,
-        win = {
-          input = { keys = { ["<Esc>"] = "" } },
-          list = { keys = { ["<Esc>"] = "" } },
-        },
-      },
       files = {
         layout = { fullscreen = true },
       },
@@ -68,12 +60,5 @@ wk.add({
       snacks.picker.grep({ hidden = true, ignored = true })
     end,
     desc = "[G]rep all(hidden and ignored) files",
-  },
-  {
-    "\\",
-    function()
-      snacks.explorer()
-    end,
-    desc = "toggle explorer",
   },
 })
