@@ -18,8 +18,12 @@
       pkgs.luajitPackages.luacheck
       pkgs.statix
     ];
+
+    tools = [
+      pkgs.ripgrep
+    ];
   in
-    formatters ++ language_servers ++ linters;
+    formatters ++ language_servers ++ linters ++ tools;
 
   initLua =
     # lua
