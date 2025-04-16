@@ -24,7 +24,25 @@
   initLua =
     # lua
     ''
-      require("config")
+      ${builtins.readFile ./config/options.lua}
+      ${builtins.readFile ./config/editor/colorscheme.lua}
+      ${builtins.readFile ./config/editor/which-key.lua}
+      ${builtins.readFile ./config/editor/neo-tree.lua}
+      ${builtins.readFile ./config/editor/snacks.lua}
+      ${builtins.readFile ./config/editor/auto-save.lua}
+      ${builtins.readFile ./config/editor/bufferline.lua}
+      ${builtins.readFile ./config/editor/gitsigns.lua}
+      ${builtins.readFile ./config/editor/guess-indent.lua}
+      ${builtins.readFile ./config/editor/lualine.lua}
+      ${builtins.readFile ./config/editor/noice.lua}
+      ${builtins.readFile ./config/editor/nvim-autopairs.lua}
+      ${builtins.readFile ./config/editor/smartyank.lua}
+      ${builtins.readFile ./config/editor/todo-comments.lua}
+      ${builtins.readFile ./config/editor/treesitter.lua}
+      ${builtins.readFile ./config/completion/init.lua}
+      ${builtins.readFile ./config/format/init.lua}
+      ${builtins.readFile ./config/lsp/init.lua}
+      ${builtins.readFile ./config/lint/init.lua}
     '';
 
   plugins =
@@ -47,16 +65,17 @@
             "guess-indent.nvim"
             "lualine.nvim"
             "LuaSnip"
+            "neo-tree.nvim"
             "nvim-autopairs"
+            "nvim-lint"
             "nvim-lspconfig"
             "noice.nvim"
             "smartyank.nvim"
+            "snacks.nvim"
             "todo-comments.nvim"
+            "which-key.nvim"
           ];
         }
       )
-    ) (import ./npins/default.nix)
-    ++ [
-      ./nvim
-    ];
+    ) (import ./npins/default.nix);
 }
