@@ -3,11 +3,10 @@ require("lz.n").load({
   event = { "BufReadPost", "BufWritePost", "BufNewFile" },
   after = function()
     local gitsigns = require("gitsigns")
-    local wk = require("which-key")
 
     gitsigns.setup({
       on_attach = function(buffer)
-        wk.add({
+        require("which-key").add({
           {
             "<leader>h",
             buffer = buffer,

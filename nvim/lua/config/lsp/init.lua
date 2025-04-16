@@ -7,10 +7,6 @@ lzn.load({
     lzn.trigger_load("blink.cmp")
   end,
   after = function()
-    local lspconfig = require("lspconfig")
-    local snacks = require("snacks")
-    local wk = require("which-key")
-
     local virtual_lines_format = function(diagnostic)
       return string.format("%s (%s)", diagnostic.message, diagnostic.source)
     end
@@ -52,7 +48,7 @@ lzn.load({
     end
 
     local on_attach = function(client, buffer)
-      wk.add({
+      require("which-key").add({
         {
           "<leader>g",
           buffer = buffer,
@@ -63,7 +59,7 @@ lzn.load({
           "<leader>gd",
           buffer = buffer,
           function()
-            snacks.picker.lsp_definitions(goto_picker_opts)
+            Snacks.picker.lsp_definitions(goto_picker_opts)
           end,
           desc = "[d]efinitions",
         },
@@ -71,7 +67,7 @@ lzn.load({
           "<leader>gD",
           buffer = buffer,
           function()
-            snacks.picker.lsp_declarations(goto_picker_opts)
+            Snacks.picker.lsp_declarations(goto_picker_opts)
           end,
           desc = "[D]eclarations",
         },
@@ -79,7 +75,7 @@ lzn.load({
           "<leader>gi",
           buffer = buffer,
           function()
-            snacks.picker.lsp_implementations(goto_picker_opts)
+            Snacks.picker.lsp_implementations(goto_picker_opts)
           end,
           desc = "[i]mplementations",
         },
@@ -87,7 +83,7 @@ lzn.load({
           "<leader>gr",
           buffer = buffer,
           function()
-            snacks.picker.lsp_references(goto_picker_opts)
+            Snacks.picker.lsp_references(goto_picker_opts)
           end,
           desc = "[r]eferences",
         },
@@ -95,7 +91,7 @@ lzn.load({
           "<leader>gt",
           buffer = buffer,
           function()
-            snacks.picker.lsp_type_definitions(goto_picker_opts)
+            Snacks.picker.lsp_type_definitions(goto_picker_opts)
           end,
           desc = "[t]ype definitions",
         },
@@ -158,6 +154,8 @@ lzn.load({
         vim.lsp.inlay_hint.enable(true, { bufnr = buffer })
       end
     end
+
+    local lspconfig = require("lspconfig")
 
     lspconfig.lua_ls.setup({
       capabilities = client_capabilities,

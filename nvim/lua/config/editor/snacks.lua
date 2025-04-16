@@ -1,7 +1,4 @@
-local snacks = require("snacks")
-local wk = require("which-key")
-
-snacks.setup({
+require("snacks").setup({
   indent = {
     enabled = true,
     indent = {
@@ -34,7 +31,7 @@ snacks.setup({
   words = { enabled = true },
 })
 
-wk.add({
+require("which-key").add({
   {
     "<leader>f",
     desc = "+[f]ind(snacks)",
@@ -43,21 +40,21 @@ wk.add({
   {
     "<leader>ff",
     function()
-      snacks.picker.files()
+      Snacks.picker.files()
     end,
     desc = "[f]iles",
   },
   {
     "<leader>fg",
     function()
-      snacks.picker.grep()
+      Snacks.picker.grep()
     end,
     desc = "[g]rep",
   },
   {
     "<leader>fG",
     function()
-      snacks.picker.grep({ hidden = true, ignored = true })
+      Snacks.picker.grep({ hidden = true, ignored = true })
     end,
     desc = "[G]rep all(hidden and ignored) files",
   },
