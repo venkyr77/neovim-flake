@@ -3,8 +3,6 @@ require("lz.n").load({
   event = { "BufWritePre" },
   after = function()
     local conform = require("conform")
-    local gitsigns = require("gitsigns")
-    local wk = require("which-key")
 
     conform.setup({
       formatters_by_ft = {
@@ -13,7 +11,7 @@ require("lz.n").load({
       },
     })
 
-    wk.add({
+    require("which-key").add({
       { "<leader>c", desc = "+[c]onform(format)" },
       {
         "<leader>cb",
@@ -26,7 +24,7 @@ require("lz.n").load({
         "<leader>cm",
         -- https://github.com/stevearc/conform.nvim/issues/92#issuecomment-2069915330
         function()
-          local hunks = gitsigns.get_hunks()
+          local hunks = require("gitsigns").get_hunks()
           for i = #hunks, 1, -1 do
             local hunk = hunks[i]
             if hunk ~= nil and hunk.type ~= "delete" then
