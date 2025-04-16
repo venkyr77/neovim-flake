@@ -17,11 +17,20 @@ lzn.load({
 })
 
 lzn.load({
+  "lspkind.nvim",
+  lazy = true,
+  after = function()
+    require("lspkind").setup()
+  end,
+})
+
+lzn.load({
   "blink.cmp",
   lazy = true,
   before = function()
     lzn.trigger_load("LuaSnip")
     lzn.trigger_load("friendly-snippets")
+    lzn.trigger_load("lspkind.nvim")
   end,
   after = function()
     require("blink.cmp").setup({

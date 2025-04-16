@@ -68,6 +68,7 @@
             "friendly-snippets"
             "gitsigns.nvim"
             "guess-indent.nvim"
+            "lspkind.nvim"
             "lualine.nvim"
             "LuaSnip"
             "neo-tree.nvim"
