@@ -41,7 +41,7 @@
       ${builtins.readFile ./config/editor/treesitter.lua}
       ${builtins.readFile ./config/completion/init.lua}
       ${builtins.readFile ./config/format/init.lua}
-      ${builtins.readFile ./config/lsp/init.lua}
+      ${import ./config/lsp {inherit pkgs;}}
       ${builtins.readFile ./config/lint/init.lua}
     '';
 
