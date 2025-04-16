@@ -40,6 +40,7 @@
       ${builtins.readFile ./config/editor/lualine.lua}
       ${builtins.readFile ./config/editor/noice.lua}
       ${builtins.readFile ./config/editor/nvim-autopairs.lua}
+      ${builtins.readFile ./config/editor/rainbow-delimiters.lua}
       ${builtins.readFile ./config/editor/smartyank.lua}
       ${builtins.readFile ./config/editor/todo-comments.lua}
       ${builtins.readFile ./config/editor/treesitter.lua}
@@ -74,6 +75,7 @@
             "nvim-lint"
             "nvim-lspconfig"
             "noice.nvim"
+            "rainbow-delimiters.nvim"
             "smartyank.nvim"
             "snacks.nvim"
             "todo-comments.nvim"
