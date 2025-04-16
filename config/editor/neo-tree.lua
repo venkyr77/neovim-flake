@@ -1,6 +1,11 @@
-require("lz.n").load({
+local lzn = require("lz.n")
+
+lzn.load({
   "neo-tree.nvim",
   lazy = false,
+  before = function()
+    lzn.trigger_load("nui.nvim")
+  end,
   after = function()
     require("neo-tree").setup({
       default_component_configs = {

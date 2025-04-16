@@ -31,6 +31,7 @@
       ${builtins.readFile ./config/options.lua}
       ${builtins.readFile ./config/editor/colorscheme.lua}
       ${builtins.readFile ./config/editor/which-key.lua}
+      ${builtins.readFile ./config/editor/nui.lua}
       ${builtins.readFile ./config/editor/neo-tree.lua}
       ${builtins.readFile ./config/editor/snacks.lua}
       ${builtins.readFile ./config/editor/auto-save.lua}
@@ -72,6 +73,7 @@
             "lualine.nvim"
             "LuaSnip"
             "neo-tree.nvim"
+            "nui.nvim"
             "nvim-autopairs"
             "nvim-lint"
             "nvim-lspconfig"
