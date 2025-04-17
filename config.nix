@@ -32,6 +32,7 @@
       ${builtins.readFile ./config/editor/colorscheme.lua}
       ${builtins.readFile ./config/editor/which-key.lua}
       ${builtins.readFile ./config/editor/nui.lua}
+      ${builtins.readFile ./config/editor/nvim-web-devicons.lua}
       ${builtins.readFile ./config/editor/plenary.lua}
       ${builtins.readFile ./config/editor/neo-tree.lua}
       ${builtins.readFile ./config/editor/snacks.lua}
@@ -78,6 +79,7 @@
             "nvim-autopairs"
             "nvim-lint"
             "nvim-lspconfig"
+            "nvim-web-devicons"
             "noice.nvim"
             "plenary.nvim"
             "rainbow-delimiters.nvim"
