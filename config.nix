@@ -63,33 +63,7 @@
         // {
           inherit pname;
           version = pin.revision;
-          optional = builtins.elem pname [
-            "auto-save.nvim"
-            "bufferline.nvim"
-            "catppuccin.nvim"
-            "conform.nvim"
-            "friendly-snippets"
-            "gitsigns.nvim"
-            "guess-indent.nvim"
-            "lazydev.nvim"
-            "lspkind.nvim"
-            "lualine.nvim"
-            "LuaSnip"
-            "neo-tree.nvim"
-            "nui.nvim"
-            "nvim-autopairs"
-            "nvim-jdtls"
-            "nvim-lint"
-            "nvim-lspconfig"
-            "nvim-web-devicons"
-            "noice.nvim"
-            "plenary.nvim"
-            "rainbow-delimiters.nvim"
-            "smartyank.nvim"
-            "snacks.nvim"
-            "todo-comments.nvim"
-            "which-key.nvim"
-          ];
+          optional = pname != "lz.n";
         }
       )
     ) (import ./npins/default.nix);
