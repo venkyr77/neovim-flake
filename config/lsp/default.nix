@@ -12,6 +12,11 @@
   })
 
   lzn.load({
+    "nvim-jdtls",
+    lazy = true,
+  })
+
+  lzn.load({
     "nvim-lspconfig",
     event = { "BufReadPost", "BufWritePost", "BufNewFile" },
     before = function()
@@ -178,6 +183,7 @@
 
       lzn.trigger_load("lazydev.nvim")
 
+      lzn.trigger_load("nvim-jdtls")
       ${import ./jdtls.nix {inherit pkgs;}}
     end,
   })

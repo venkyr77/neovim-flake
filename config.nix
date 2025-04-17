@@ -78,6 +78,7 @@
             "neo-tree.nvim"
             "nui.nvim"
             "nvim-autopairs"
+            "nvim-jdtls"
             "nvim-lint"
             "nvim-lspconfig"
             "nvim-web-devicons"
