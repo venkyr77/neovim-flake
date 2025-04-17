@@ -246,9 +246,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "c40a2dca6e4a4f4af262375dcb71692882b6122c",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/c40a2dca6e4a4f4af262375dcb71692882b6122c.tar.gz",
-      "hash": "163hganx111i32a519jsrzhsykawg71sk588fgs08bjm1dk479ni"
+      "revision": "cb5680882ed1f18e67429516e45b810de3d148b8",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/cb5680882ed1f18e67429516e45b810de3d148b8.tar.gz",
+      "hash": "08db2k8j8a57ygn8397iv2fmyi1br7lw8dyi744hxhm3bh33r9rd"
     },
     "nvim-web-devicons": {
       "type": "Git",
@@ -285,9 +285,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "c921526c23fe94e3da5132fea5ca9ee3c3068a90",
-      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/c921526c23fe94e3da5132fea5ca9ee3c3068a90.tar.gz",
-      "hash": "142rpqi0q2w8zahwn7qjgh23l04f11yg89vgalydpvawxr2bv0aj"
+      "revision": "55ad4fb76ab68460f700599b7449385f0c4e858e",
+      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/55ad4fb76ab68460f700599b7449385f0c4e858e.tar.gz",
+      "hash": "1wb18hp5yz4vhw9ajm50006n4d1mp1krri6kidxh8rkhs0d6zqhi"
     },
     "smartyank.nvim": {
       "type": "Git",
