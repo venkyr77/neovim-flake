@@ -4,6 +4,14 @@
   local lzn = require("lz.n")
 
   lzn.load({
+    "lazydev.nvim",
+    lazy = true,
+    after = function()
+      require("lazydev").setup()
+    end
+  })
+
+  lzn.load({
     "nvim-lspconfig",
     event = { "BufReadPost", "BufWritePost", "BufNewFile" },
     before = function()
@@ -17,8 +25,6 @@
       vim.diagnostic.config({
         virtual_lines = { format = virtual_lines_format },
       })
-
-      require("lazydev").setup()
 
       local client_capabilities = require("blink.cmp").get_lsp_capabilities()
 
@@ -169,6 +175,8 @@
         capabilities = client_capabilities,
         on_attach = on_attach,
       })
+
+      lzn.trigger_load("lazydev.nvim")
 
       ${import ./jdtls.nix {inherit pkgs;}}
     end,
