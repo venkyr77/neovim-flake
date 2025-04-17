@@ -2,9 +2,18 @@
   inherit (pkgs.lib.strings) hasSuffix;
 
   vscode-java-debug = "${pkgs.vscode-extensions.vscjava.vscode-java-debug}/share/vscode/extensions/vscjava.vscode-java-debug";
-  vscode-java-test = "${pkgs.vscode-extensions.vscjava.vscode-java-test}/share/vscode/extensions/vscjava.vscode-java-test";
+  # https://github.com/microsoft/vscode-java-test/issues/1759
+  # custom fetch until nixpkgs uses 43.2(43.2 is in pre-release)
+  vscode-java-test = "${pkgs.vscode-utils.buildVscodeMarketplaceExtension {
+    mktplcRef = {
+      name = "vscode-java-test";
+      publisher = "vscjava";
+      version = "0.43.2025040304";
+      sha256 = "sha256-SfB2tRRvuzmZEZBEc2pq46YjeGVXWOwALZyMmJ+dU3w=";
+    };
+  }}/share/vscode/extensions/vscjava.vscode-java-test";
 
-  getJars = plugin: map (jar: "${plugin}/${jar}") (builtins.attrNames (builtins.readDir "${plugin}/server"));
+  getJars = plugin: map (jar: "${plugin}/server/${jar}") (builtins.attrNames (builtins.readDir "${plugin}/server"));
 
   bundles =
     builtins.filter
@@ -60,20 +69,20 @@ in
               runtimes = {
                 {
                   name = "JavaSE-1.8",
-                  path = "${pkgs.jdk8}",
+                  path = vim.fn.fnamemodify("${pkgs.jdk8}/lib/openjdk", ":p"),
                 },
                 {
                   name = "JavaSE-11",
-                  path = "${pkgs.jdk11}",
+                  path = vim.fn.fnamemodify("${pkgs.jdk11}/lib/openjdk", ":p"),
                 },
                 {
                   name = "JavaSE-17",
-                  path = "${pkgs.jdk17}",
+                  path = vim.fn.fnamemodify("${pkgs.jdk17}/lib/openjdk", ":p"),
                   default = true,
                 },
                 {
                   name = "JavaSE-21",
-                  path = "${pkgs.jdk21}",
+                  path = vim.fn.fnamemodify("${pkgs.jdk21}/lib/openjdk", ":p"),
                 },
               },
             },
