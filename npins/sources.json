@@ -211,6 +211,32 @@
       "url": "https://github.com/windwp/nvim-autopairs/archive/4d74e75913832866aa7de35e4202463ddf6efd1b.tar.gz",
       "hash": "0q6pv89x05l71nfg2chqf9p0d2ha72agmll2svimq0npp84ymfxz"
     },
+    "nvim-dap": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "mfussenegger",
+        "repo": "nvim-dap"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "7aade9e99bef5f0735cf966e715b3ce45515d786",
+      "url": "https://github.com/mfussenegger/nvim-dap/archive/7aade9e99bef5f0735cf966e715b3ce45515d786.tar.gz",
+      "hash": "0cr2y3lkr6ffxxd9b2pj8hr3fzb5dlj003fcknswqwsdhws75l22"
+    },
+    "nvim-dap-ui": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "rcarriga",
+        "repo": "nvim-dap-ui"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "881a69e25bd6658864fab47450025490b74be878",
+      "url": "https://github.com/rcarriga/nvim-dap-ui/archive/881a69e25bd6658864fab47450025490b74be878.tar.gz",
+      "hash": "040xa1jg5591czydjsxf9rwk3g805nxgaaqn5zkgkxr3igc2rvsy"
+    },
     "nvim-jdtls": {
       "type": "Git",
       "repository": {
@@ -249,6 +275,19 @@
       "revision": "cb5680882ed1f18e67429516e45b810de3d148b8",
       "url": "https://github.com/neovim/nvim-lspconfig/archive/cb5680882ed1f18e67429516e45b810de3d148b8.tar.gz",
       "hash": "08db2k8j8a57ygn8397iv2fmyi1br7lw8dyi744hxhm3bh33r9rd"
+    },
+    "nvim-nio": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvim-neotest",
+        "repo": "nvim-nio"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "21f5324bfac14e22ba26553caf69ec76ae8a7662",
+      "url": "https://github.com/nvim-neotest/nvim-nio/archive/21f5324bfac14e22ba26553caf69ec76ae8a7662.tar.gz",
+      "hash": "1bz5msxwk232zkkhfxcmr7a665la8pgkdx70q99ihl4x04jg6dkq"
     },
     "nvim-web-devicons": {
       "type": "Git",
