@@ -17,4 +17,7 @@ require("lz.n").load({
 require("lz.n").load({
   "nvim-dap-ui",
   lazy = false,
+  after = function()
+    require("dapui").setup()
+  end,
 })
