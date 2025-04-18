@@ -8,8 +8,8 @@
     mktplcRef = {
       name = "vscode-java-test";
       publisher = "vscjava";
-      version = "0.43.2025040304";
-      sha256 = "sha256-SfB2tRRvuzmZEZBEc2pq46YjeGVXWOwALZyMmJ+dU3w=";
+      version = "0.43.0";
+      sha256 = "sha256-EM0S1Y4cRMBCRbAZgl9m6fIhANPrvdGVZXOLlDLnVWo=";
     };
   }}/share/vscode/extensions/vscjava.vscode-java-test";
 
