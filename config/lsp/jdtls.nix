@@ -100,7 +100,7 @@ in
         }
 
         jdtls.start_or_attach({
-          capabilities = client_capabilities,
+          capabilities = require("blink.cmp").get_lsp_capabilities(),
           cmd = cmd,
           init_options = init_options,
           on_attach = function(client, buffer)
