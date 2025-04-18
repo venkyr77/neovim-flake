@@ -79,7 +79,7 @@
         })
       end
 
-      local on_attach = function(client, buffer)
+      local default_on_attach = function(client, buffer)
         require("which-key").add({
           {
             "<leader>g",
@@ -191,12 +191,12 @@
 
       lspconfig.lua_ls.setup({
         capabilities = client_capabilities,
-        on_attach = on_attach,
+        on_attach = default_on_attach,
       })
 
       lspconfig.nixd.setup({
         capabilities = client_capabilities,
-        on_attach = on_attach,
+        on_attach = default_on_attach,
       })
 
       lzn.trigger_load("lazydev.nvim")

@@ -103,7 +103,27 @@ in
           capabilities = client_capabilities,
           cmd = cmd,
           init_options = init_options,
-          on_attach = on_attach,
+          on_attach = function(client, buffer)
+            default_on_attach(client, buffer)
+            require("which-key").add({
+              {
+                "<leader>ltc",
+                buffer = buffer,
+                function()
+                  jdtls.test_class({ config_overrides = { shortenCommandLine = "argfile" } })
+                end,
+                desc = "[t]est [c]lass",
+              },
+              {
+                "<leader>ltm",
+                buffer = buffer,
+                function()
+                  jdtls.test_nearest_method({ config_overrides = { shortenCommandLine = "argfile" } })
+                end,
+                desc = "[t]est nearest [m]ethod",
+              },
+            })
+          end,
           root_dir = root_dir,
           settings = settings,
         })
