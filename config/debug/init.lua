@@ -15,6 +15,7 @@ require("lz.n").load({
     local dap, dapui = require("dap"), require("dapui")
     dapui.setup()
     dap.listeners.after.event_initialized["dapui_config"] = function()
+      require("neo-tree.command").execute({ action = "close" })
       require("dapui").open()
     end
   end,
