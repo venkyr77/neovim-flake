@@ -354,19 +354,6 @@
       "url": "https://github.com/folke/snacks.nvim/archive/bc0630e43be5699bb94dadc302c0d21615421d93.tar.gz",
       "hash": "0a5nw7xa33shag1h12gf930g3vcixbwk8dxv0ji4980ycskh238v"
     },
-    "sonarlint.nvim": {
-      "type": "Git",
-      "repository": {
-        "type": "GitLab",
-        "repo_path": "schrieveslaach/sonarlint.nvim",
-        "server": "https://gitlab.com/"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "b63cbfc476d08c51bf4ffc0b6d7a5dcec2f924b9",
-      "url": "https://gitlab.com/api/v4/projects/schrieveslaach%2Fsonarlint.nvim/repository/archive.tar.gz?sha=b63cbfc476d08c51bf4ffc0b6d7a5dcec2f924b9",
-      "hash": "0fsma78mqbgdgnkcqrzvxwfmv2hrsni56g797zzzdfd21ly27fj9"
-    },
     "todo-comments.nvim": {
       "type": "Git",
       "repository": {

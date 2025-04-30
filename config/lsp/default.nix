@@ -191,25 +191,4 @@
       ${import ./jdtls.nix {inherit pkgs;}}
     end,
   })
-
-  lzn.load({
-    "sonarlint.nvim",
-    ft = "java",
-    before = function()
-      lzn.trigger_load("nvim-lspconfig")
-    end,
-    after = function()
-      require("sonarlint").setup({
-        server = {
-          cmd = {
-            "${pkgs.lib.getExe pkgs.sonarlint-ls}",
-            "-stdio",
-            "-analyzers",
-            "${pkgs.sonarlint-ls}/share/plugins/sonarjava.jar",
-          },
-        },
-        filetypes = { "java" },
-      })
-    end,
-  })
 ''
