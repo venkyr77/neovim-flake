@@ -1,12 +1,28 @@
-require("lz.n").load({
+{pkgs, ...}:
+# lua
+''
+  require("lz.n").load({
   "conform.nvim",
   event = { "BufWritePre" },
   after = function()
     local conform = require("conform")
 
     conform.setup({
+      formatters = {
+        denofmt_md = {
+          command = "${pkgs.lib.getExe pkgs.deno}",
+          args = {
+            "fmt",
+            "-",
+            "--ext",
+            "md",
+          },
+        },
+      },
       formatters_by_ft = {
+        java = { lsp_format = "prefer" },
         lua = { "stylua" },
+        markdown = { "denofmt_md" },
         nix = { "alejandra" },
       },
     })
@@ -41,4 +57,5 @@ require("lz.n").load({
       },
     })
   end,
-})
+  })
+''
