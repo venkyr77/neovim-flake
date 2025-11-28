@@ -70,11 +70,10 @@
 
         packages.default = mnw.lib.wrap pkgs {
           inherit (neovim-nightly.packages.${system}) neovim;
-          plugins = [
+          plugins.opt = [
             {
               pname = "blink.cmp";
               src = blink-cmp.packages.${system}.blink-cmp;
-              optional = true;
             }
           ];
           imports = [./config.nix];

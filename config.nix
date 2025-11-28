@@ -16,7 +16,21 @@
 
     linters = [
       pkgs.luajitPackages.luacheck
-      pkgs.statix
+      (
+        pkgs.statix.overrideAttrs (_old: rec {
+          src = pkgs.fetchFromGitHub {
+            owner = "oppiliappan";
+            repo = "statix";
+            rev = "master";
+            hash = "sha256-duH6Il124g+CdYX+HCqOGnpJxyxOCgWYcrcK0CBnA2M=";
+          };
+
+          cargoDeps = pkgs.rustPlatform.importCargoLock {
+            lockFile = src + "/Cargo.lock";
+            allowBuiltinFetchGit = true;
+          };
+        })
+      )
     ];
 
     tools = [
@@ -54,18 +68,22 @@
       ${builtins.readFile ./config/lint/init.lua}
     '';
 
-  plugins =
-    [
-      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-    ]
-    ++ lib.mapAttrsToList (
-      pname: pin: (
-        pin
-        // {
-          inherit pname;
-          version = pin.revision;
-          optional = pname != "lz.n";
-        }
-      )
-    ) (import ./npins/default.nix);
+  plugins = let
+    pins = import ./npins/default.nix;
+
+    mkPlugin = pname: pin:
+      pin
+      // {
+        inherit pname;
+        version = pin.revision;
+      };
+  in {
+    opt =
+      lib.mapAttrsToList mkPlugin (lib.filterAttrs (pname: _: pname != "lz.n") pins);
+    start =
+      [
+        pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+      ]
+      ++ lib.mapAttrsToList mkPlugin (lib.filterAttrs (pname: _: pname == "lz.n") pins);
+  };
 }
