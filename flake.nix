@@ -27,10 +27,7 @@
     neovim-nightly = {
       url = "github:nix-community/neovim-nightly-overlay";
       inputs = {
-        flake-compat.follows = "flake-compat";
         flake-parts.follows = "flake-parts";
-        git-hooks.follows = "git-hooks";
-        hercules-ci-effects.follows = "hercules-ci-effects";
         nixpkgs.follows = "nixpkgs";
       };
     };
